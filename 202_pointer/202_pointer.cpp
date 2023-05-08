@@ -20,5 +20,10 @@ int main()
 	mahasiswa ref = mhs;
 	ref.nim = 2;
 	mhs.showNim();
-	system 
+
+	mahasiswa* pmhs = &mhs;
+	pmhs->nim = 3;
+	mhs.showNim();
+	system("pause");
+	return 0;
 }
